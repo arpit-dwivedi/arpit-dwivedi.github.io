@@ -5,7 +5,10 @@
 **Steps for using this template for your portfolio**
 
 1.  Clone this repository.
-2.  Open it through Bootstrap studio.
+2.  Open it through Bootstrap studio (By dragging all html pages to new design and js and css file as well).
+
+>You will not be able to use drag and drop features.
+
 3.  Edit all pages with your links and photos.
 4.  Export the project with CDN(to make it light).
 5.  To host on Git hub:
