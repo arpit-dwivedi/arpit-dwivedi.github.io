@@ -2,7 +2,7 @@
 
 **Made on:** [Bootstrap Studio](https://bootstrapstudio.io/)
 
->Best way will be to choose your own tempelate grom bootstrap studio and build on top of it.
+>Best way will be to choose your own template from bootstrap studio and build on top of it using drag and drop features.
 
 **Steps for using this template for your portfolio**
 
