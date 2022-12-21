@@ -1,4 +1,4 @@
-**Link :** [Arpit Dwivedi Portfolio](http://arpit-dwivedi.me/)
+**Link :** [Arpit Dwivedi Portfolio](https://arpit-dwivedi.github.io/)
 
 **Made on:** [Bootstrap Studio](https://bootstrapstudio.io/)
 
