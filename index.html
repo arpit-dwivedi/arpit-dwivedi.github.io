@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <style>
+        .portfolio-block.cv .horizontal-info-card { height: auto; }
+        .portfolio-block.cv .horizontal-info-card h3 { margin-top: 0; font-size: 1rem; font-weight: 700; }
+        .horizontal-info-card p, .horizontal-info-card a { overflow-wrap: anywhere; }
+        @media (max-width: 575.98px) {
+            .horizontal-info-card { padding: 24px; }
+        }
+    </style>
 </head>
 
 <body>
@@ -21,15 +29,10 @@
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="codemosaic.html" id="codemosaicDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            CodeMosaic
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="codemosaicDropdown">
-                            <a class="dropdown-item" href="codemosaic.html#section1">Book Info</a>
-                            <a class="dropdown-item" href="codemosaic.html#section2">Key Strengths</a>
-                            <a class="dropdown-item" href="codemosaic.html#section3">Comparison</a>
-                            <a class="dropdown-item" href="codemosaic.html#section4">Stages/Timeline</a>
-                            <a class="dropdown-item" href="codemosaic.html#section5">Buy</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="booksDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books Authored</a>
+                        <div class="dropdown-menu" aria-labelledby="booksDropdown">
+                            <a class="dropdown-item" href="codemosaic.html">CodeMosaic</a>
+                            <a class="dropdown-item" href="vibe-coding-done-right.html">Vibe Coding Done Right</a>
                         </div>
                     </li>                    
                     <li class="nav-item" role="presentation"><a class="nav-link" href="https://blog.arpitdwivedi.in/">Blog Site</a></li>
@@ -47,7 +50,7 @@
                     <h1>Arpit Dwivedi</h1>
                     <p><strong>Senior Product Engineer · Full Stack Development</strong></p>
                     <p>I build enterprise web applications with C#, .NET Core, Angular, SQL Server, and Azure. With 5+ years of software development experience, I work across the full development lifecycle—from database design and APIs to front-end development, testing, and automated deployments. My work spans oil, chemicals, beauty, logistics, and ingredient management, with a focus on scalable applications, legacy modernization, and engineering quality.</p>
-                    <p>I am also the author of <a href="codemosaic.html">CodeMosaic, published by Apress</a>, a technical writer, and the founder of a developer learning community with 10,000+ LinkedIn followers.</p>
+                    <p>I am also the author of <a href="codemosaic.html">CodeMosaic</a> and <a href="vibe-coding-done-right.html">Vibe Coding Done Right</a>, a technical writer, and the founder of a developer learning community with 10,000+ LinkedIn followers.</p>
                 </div>
                 <a class="btn btn-primary" role="button" href="assets/ArpitDwivedi_Latest_CV.pdf" download>Download Resume</a>
             </div>
@@ -114,36 +117,67 @@
                         <ul></ul>
                     </div>
                 </div>
-                <div class="group">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="skills portfolio-info-card">
-                                <h2>Skills</h2>
-<h3>Languages</h3><p>C#, JavaScript, TypeScript, SQL</p>
-<h3>Applications &amp; APIs</h3><p>ASP.NET Core, Web API, Angular, DevExtreme, RESTful APIs, microservices</p>
-<h3>Data &amp; Search</h3><p>SQL Server, SSMS, LLBLGen Pro, Entity Framework, Elasticsearch, Couchbase, Cosmos DB, Azure Cognitive Search</p>
-<h3>Cloud &amp; Integration</h3><p>Azure, Azure Blob Storage, Azure Service Bus, API Gateway, Azure OpenAI Service integration</p>
-<h3>Quality &amp; Delivery</h3><p>xUnit, Git, CI/CD pipelines, Azure DevOps, SonarCloud, Jira</p>
-<h3>Engineering Practices</h3><p>Legacy application modernization, database design, data visualization, dashboard development, low-level design, Agile delivery, requirements gathering, stakeholder collaboration, technical documentation</p>
-
+                <section class="group" aria-labelledby="skills-heading">
+                    <div class="skills portfolio-info-card horizontal-info-card">
+                        <h2 id="skills-heading">Skills</h2>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 mb-3">
+                                <h3>Languages</h3>
+                                <p>C#, JavaScript, TypeScript, SQL</p>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="contact-info portfolio-info-card">
-                                <h2>Contact Info</h2>
-                                <p>Arpit Dwivedi · India</p>
-                                <p><a href="tel:+919532294061">+91 9532294061</a></p>
-                                <p style="overflow-wrap: anywhere;"><a href="mailto:8arpitdwivedi798@gmail.com">8arpitdwivedi798@gmail.com</a></p>
-                                <p><a href="https://www.linkedin.com/in/dwivedi-arpit/">LinkedIn</a> · <a href="https://github.com/arpit-dwivedi">GitHub</a> · <a href="https://blog.arpitdwivedi.in/">Technology Blog</a></p>
+                            <div class="col-md-6 col-lg-4 mb-3">
+                                <h3>Applications &amp; APIs</h3>
+                                <p>ASP.NET Core, Web API, Angular, DevExtreme, RESTful APIs, microservices</p>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-3">
+                                <h3>Data &amp; Search</h3>
+                                <p>SQL Server, SSMS, LLBLGen Pro, Entity Framework, Elasticsearch, Couchbase, Cosmos DB, Azure Cognitive Search</p>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-3">
+                                <h3>Cloud &amp; Integration</h3>
+                                <p>Azure, Azure Blob Storage, Azure Service Bus, API Gateway, Azure OpenAI Service integration</p>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-3">
+                                <h3>Quality &amp; Delivery</h3>
+                                <p>xUnit, Git, CI/CD pipelines, Azure DevOps, SonarCloud, Jira</p>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-3">
+                                <h3>Engineering Practices</h3>
+                                <p>Legacy application modernization, database design, data visualization, dashboard development, low-level design, Agile delivery, requirements gathering, stakeholder collaboration, technical documentation</p>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
+                <section class="group" aria-labelledby="contact-heading">
+                    <div class="contact-info portfolio-info-card horizontal-info-card">
+                        <h2 id="contact-heading">Contact Info</h2>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <h3>Location</h3>
+                                <p>Arpit Dwivedi · India</p>
+                                <h3>Phone</h3>
+                                <p><a href="tel:+919532294061">+91 9532294061</a></p>
+                            </div>
+                            <div class="col-md-5 mb-3">
+                                <h3>Email</h3>
+                                <p><a href="mailto:8arpitdwivedi798@gmail.com">8arpitdwivedi798@gmail.com</a></p>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <h3>Connect</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="https://www.linkedin.com/in/dwivedi-arpit/">LinkedIn</a></li>
+                                    <li><a href="https://github.com/arpit-dwivedi">GitHub</a></li>
+                                    <li><a href="https://blog.arpitdwivedi.in/">Technology Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <div class="group">
                     <div class="heading"><h2 class="text-center">Certifications &amp; Highlights</h2></div>
                     <ul>
                         <li><strong>Microsoft Azure:</strong> AZ-900 (Azure Fundamentals) and AZ-204 (Developing Solutions for Microsoft Azure); awarded the Infosys Cloud Professional Skill Tag.</li>
-                        <li><strong>Published author:</strong> Authored <a href="codemosaic.html">CodeMosaic</a>, published by Apress.</li>
+                        <li><strong>Published author:</strong> Authored <a href="codemosaic.html">CodeMosaic</a> and <a href="vibe-coding-done-right.html">Vibe Coding Done Right</a>. <a href="https://link.springer.com/book/10.1007/979-8-8688-2495-1">View the latest book on Springer Nature</a>.</li>
                         <li><strong>LinkedIn Top Voice:</strong> Recognized in Computer Science for sharing technical insights and knowledge.</li>
                         <li><strong>Technical content:</strong> Published practical software engineering and development articles at <a href="https://blog.arpitdwivedi.in/">blog.arpitdwivedi.in</a>.</li>
                         <li><strong>Community founder:</strong> Built a free open-source learning community for students and developers, reaching 10,000+ LinkedIn followers and supporting collaborative learning and contributions.</li>
